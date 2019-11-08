@@ -47,17 +47,58 @@ function Pizza(size, sauce, cheese, topping){
 }
 
 Pizza.prototype.finalProduct = function(){
-  return this.size + ", " + this.sauce + ", " + this.topping;
+  return this.size + ", " + this.sauce + ", " + this.cheese + ", " + this.topping;
 }
 
 // User Interface Logic
-var pizzeria = new pizzeria();
+var pizzeria = new Pizzeria();
 
 function displayPizzaDetails(pizzaToDisplay){
   var pizzaList = $("#previewPizzas");
-  var pizzaInfo = "";
-  displayPizzaDetails.pizza.forEach(function(pizza) {
-    pizzaInfo += "<li id=" + pizza.id + ">" + pizza.size "</li>";
+  var htmlForPizzaInfo = "";
+  pizzaToDisplay.pizza.forEach(function(pizza) {
+    htmlForPizzaInfo += "<li id=" + pizza.id + ">" + pizza.size + "</li>";
   });
-  contactsList.html(htmlForContactInfo);
+  pizzaList.html(pizzaInfo);
 }
+
+function showPizza(pizzaId) {
+  var pizza = pizzeria.findPizza(pizzaId);
+  $("#show-pizza").show();
+  $(".size1").html(pizza.size1);
+  $(".sauce1").html(pizza.sauce);
+  $(".cheese1").html(pizza.cheese);
+  $(".topping1").html(pizza.topping);
+  var buttons = $("#buttons");
+  buttons.empty();
+  buttons.append("<button class='deleteButton' id=" + pizza.id + ">Delete</button>");
+}
+
+function attachPizzaListeners() {
+  $("#previewPizzas").on("click", "li", function() {
+    showPizza(this.id);
+  });
+  $("#buttons").on("click", ".deleteButton", function() {
+    pizzeria.deletePizza(this.id);
+    $("#show-pizza").hide();
+    displayPizzaDetails(pizzeria);
+  });
+};
+
+$(document).ready(function() {
+  attachPizzaListeners();
+  $("mainForm").submit(function(event) {
+    event.preventDefault();
+    var inputtedSize = $("#newSize").val();
+    var inputtedSauce = $("#newSauce").val();
+    var inputtedCheese = $("#newCheese").val();
+    var inputtedTopping = $("#newTopping").val();
+    $("#newSize").val("");
+    $("#newSauce").val("");
+    $("#newCheese").val("");
+    $("#newTopping").val("");
+    var newPizza = new Pizzas(inputtedSize, inputtedSauce, inputtedCheese, inputtedTopping);
+    pizzeria.addPizza(newPizza);
+    displayPizzaDetails(pizzeria);
+  });
+});
