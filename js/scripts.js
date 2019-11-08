@@ -39,13 +39,25 @@ Pizzeria.prototype.deletePizza = function(id) {
 
 
 // Business Logic for Pizza
-function Pizza(size, sauce, topping, topping2){
+function Pizza(size, sauce, cheese, topping){
   this.size = size,
   this.sauce = sauce,
-  this.topping = topping,
-  this.topping2 = topping2
+  this.cheese = cheese,
+  this.topping = topping
 }
 
 Pizza.prototype.finalProduct = function(){
   return this.size + ", " + this.sauce + ", " + this.topping;
+}
+
+// User Interface Logic
+var pizzeria = new pizzeria();
+
+function displayPizzaDetails(pizzaToDisplay){
+  var pizzaList = $("#previewPizzas");
+  var pizzaInfo = "";
+  displayPizzaDetails.pizza.forEach(function(pizza) {
+    pizzaInfo += "<li id=" + pizza.id + ">" + pizza.size "</li>";
+  });
+  contactsList.html(htmlForContactInfo);
 }
