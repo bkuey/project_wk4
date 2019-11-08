@@ -22,13 +22,23 @@
         <div>
           <select class="form-control" name="size">
             <option value="0">select here:</option>
-            <option value="1">Small (10")</option>
-            <option value="2">Medium (12")</option>
-            <option value="3">Large (14")</option>
+            <option value="1">Small (10") - $7</option>
+            <option value="2">Medium (12") - $10</option>
+            <option value="3">Large (14") - $14</option>
           </select>
         </div>
 
-        <p>Cheese:</p>
+        <p>Pick a sauce (included) :</p>
+        <div>
+          <select class="form-control" name="sauce">
+            <option value="s0">select here:</option>
+            <option value="s1">Tomato</option>
+            <option value="s2">BBQ</option>
+            <option value="s3">Pesto</option>
+          </select>
+        </div>
+
+        <p>Cheese it up (included) :</p>
         <div>
           <select class="form-control" name="cheese">
             <option value="c0">select here:</option>
@@ -39,33 +49,34 @@
           </select>
         </div>
 
-        <p>Pick a topping:</p>
+        <p>Add a topping (included):</p>
         <div>
           <select class="form-control" name="topping">
-            <option value="01">select here:</option>
-            <option value="11">Pepperoni</option>
-            <option value="21">Sausage</option>
-            <option value="31">Pineapple</option>
-            <option value="41">Mushrooms</option>
-            <option value="51">Chicken</option>
+            <option value="t0">select here:</option>
+            <option value="t1">Pepperoni</option>
+            <option value="t2">Sausage</option>
+            <option value="t3">Pineapple</option>
+            <option value="t4">Mushrooms</option>
+            <option value="t5">Chicken</option>
+            <option value="t5">Cheese Only</option>
           </select>
         </div>
 
-        <p>Add another topping (optional) :</p>
+        <p>Add another topping for only $2! (optional) :</p>
         <div>
           <select class="form-control" name="topping2">
-            <option value="02">select here:</option>
-            <option value="12">Pepperoni</option>
-            <option value="22">Sausage</option>
-            <option value="32">Pineapple</option>
-            <option value="42">Mushrooms</option>
-            <option value="52">Chicken</option>
+            <option value="t6">select here:</option>
+            <option value="t7">Pepperoni</option>
+            <option value="t8">Sausage</option>
+            <option value="t9">Pineapple</option>
+            <option value="t10">Mushrooms</option>
+            <option value="t11">Chicken</option>
+            <option value="t12">No Thanks!</option>
           </select>
         </div>
 
-
-
-
+        <button type="submit" class="btn-info">Preview!</button>
+        <button type="submit" class="btn-danger">Confirm!</button>
       </form>
     </div>
   </body>
