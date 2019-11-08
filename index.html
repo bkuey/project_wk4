@@ -62,22 +62,20 @@
           </select>
         </div>
 
-        <p>Add another topping for only $2! (optional) :</p>
-        <div>
-          <select class="form-control" name="topping2">
-            <option value="t6">select here:</option>
-            <option value="t7">Pepperoni</option>
-            <option value="t8">Sausage</option>
-            <option value="t9">Pineapple</option>
-            <option value="t10">Mushrooms</option>
-            <option value="t11">Chicken</option>
-            <option value="t12">No Thanks!</option>
-          </select>
-        </div>
-
-        <button type="submit" class="btn-info">Preview!</button>
-        <button type="submit" class="btn-danger">Confirm!</button>
+        <button id="preview" type="submit" class="btn-info">Preview!</button>
+        <button id="confirm" type="submit" class="btn-success">Confirm!</button>
+        <button id="empty" type="submit" class="btn-danger">Nevermind!</button>
       </form>
+
+      <div id="show-pizza">
+        <p>Size: <span class="size1"></span></p>
+        <p>Sauce: <span class="sauce1"></span></p>
+        <p>Cheese: <span class="cheese1"></span></p>
+        <p>Topping: <span class="topping1"></span></p>
+        <div id="buttons">
+        </div>
+      </div>
+
     </div>
   </body>
 </html>

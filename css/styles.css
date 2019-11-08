@@ -5,3 +5,7 @@ p {
 button {
   margin-top: 25px;
 }
+
+#show-pizza {
+  display: none;
+}
