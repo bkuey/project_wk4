@@ -5,57 +5,68 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Epicodus Pizzaria</title>
+    <title>Mai Kue's Pizzeria</title>
   </head>
   <body>
     <div class="container">
 
       <div class="jumbotron">
-        <h1>Mai Kue's Pizzaria!</h1>
+        <h1>Mai Kue's Pizzeria!</h1>
       </div>
+
+      <h3>Put in an order for pick-up!</h3>
 
       <form id="mainForm">
 
         <p>Pick a size:</p>
         <div>
           <select class="form-control" name="size">
-            <option value="0"></option>
-            <option value="1">Small</option>
-            <option value="2">Medium</option>
-            <option value="3">Large</option>
+            <option value="0">select here:</option>
+            <option value="1">Small (10")</option>
+            <option value="2">Medium (12")</option>
+            <option value="3">Large (14")</option>
+          </select>
+        </div>
+
+        <p>Cheese:</p>
+        <div>
+          <select class="form-control" name="cheese">
+            <option value="c0">select here:</option>
+            <option value="c1">Mozzarella</option>
+            <option value="c2">Provolone</option>
+            <option value="c3">Cheddar</option>
+            <option value="c4">Parmesan</option>
           </select>
         </div>
 
         <p>Pick a topping:</p>
         <div>
           <select class="form-control" name="topping">
-            <option value="00"></option>
-            <option value="11"></option>
-            <option value="22"></option>
-            <option value="00"></option>
-            <option value="11"></option>
-            <option value="22"></option>
+            <option value="01">select here:</option>
+            <option value="11">Pepperoni</option>
+            <option value="21">Sausage</option>
+            <option value="31">Pineapple</option>
+            <option value="41">Mushrooms</option>
+            <option value="51">Chicken</option>
           </select>
         </div>
 
-        <p>Pick another topping!</p>
+        <p>Add another topping (optional) :</p>
         <div>
-          <select class="form-control" name="topping">
-            <option value="000"></option>
-            <option value="111"></option>
-            <option value="222"></option>
+          <select class="form-control" name="topping2">
+            <option value="02">select here:</option>
+            <option value="12">Pepperoni</option>
+            <option value="22">Sausage</option>
+            <option value="32">Pineapple</option>
+            <option value="42">Mushrooms</option>
+            <option value="52">Chicken</option>
           </select>
         </div>
-
 
 
 
 
       </form>
-
-
-
-
     </div>
   </body>
 </html>
