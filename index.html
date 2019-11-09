@@ -14,72 +14,58 @@
         <h1>Mai Kue's Pizzeria!</h1>
       </div>
 
-      <h3>Put in an order for pick-up!</h3>
+          <h3>Put in an order for pick-up!</h3>
 
-      <form id="mainForm">
+          <form id="mainForm">
+            <p>Pick a size:</p>
+            <div>
+              <select class="form-control" name="size" id="newSize">
+                <option>select here:</option>
+                <option>Small (10") - $7</option>
+                <option>Medium (12") - $10</option>
+                <option>Large (14") - $14</option>
+              </select>
+            </div>
+            <p>Pick a sauce (included) :</p>
+            <div>
+              <select class="form-control" name="sauce" id="newSauce">
+                <option>select here:</option>
+                <option>Tomato Sauce</option>
+                <option>BBQ Sauce</option>
+                <option>Pesto Sauce</option>
+              </select>
+            </div>
+            <p>Cheese it up (included) :</p>
+            <div>
+              <select class="form-control" name="cheese" id="newCheese">
+                <option>select here:</option>
+                <option>Mozzarella</option>
+                <option>Provolone</option>
+                <option>Cheddar</option>
+                <option>Parmesan</option>
+              </select>
+            </div>
+            <p>Add a topping (included):</p>
+            <div>
+              <select class="form-control" name="topping" id="newTopping">
+                <option>select here:</option>
+                <option>Pepperoni</option>
+                <option>Sausage</option>
+                <option>Pineapple</option>
+                <option>Mushrooms</option>
+                <option>Chicken</option>
+                <option>Extra Cheese</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-info">Add to Cart</button>
+          </form>
 
-        <p>Pick a size:</p>
-        <div>
-          <select class="form-control" name="size" id="newSize">
-            <option value="0">select here:</option>
-            <option value="1">Small (10") - $7</option>
-            <option value="2">Medium (12") - $10</option>
-            <option value="3">Large (14") - $14</option>
-          </select>
-        </div>
 
-        <p>Pick a sauce (included) :</p>
-        <div>
-          <select class="form-control" name="sauce" id="newSauce">
-            <option value="s0">select here:</option>
-            <option value="s1">Tomato</option>
-            <option value="s2">BBQ</option>
-            <option value="s3">Pesto</option>
-          </select>
-        </div>
-
-        <p>Cheese it up (included) :</p>
-        <div>
-          <select class="form-control" name="cheese" id="newCheese">
-            <option value="c0">select here:</option>
-            <option value="c1">Mozzarella</option>
-            <option value="c2">Provolone</option>
-            <option value="c3">Cheddar</option>
-            <option value="c4">Parmesan</option>
-          </select>
-        </div>
-
-        <p>Add a topping (included):</p>
-        <div>
-          <select class="form-control" name="topping" id="newTopping">
-            <option value="t0">select here:</option>
-            <option value="t1">Pepperoni</option>
-            <option value="t2">Sausage</option>
-            <option value="t3">Pineapple</option>
-            <option value="t4">Mushrooms</option>
-            <option value="t5">Chicken</option>
-            <option value="t5">Extra Cheese</option>
-          </select>
-        </div>
-
-        <button id="preview" type="submit" class="btn-info">Add to Cart</button>
-        <!-- <button id="confirm" type="submit" class="btn-success">Confirm!</button>
-        <button id="empty" type="submit" class="btn-danger">Nevermind!</button> -->
-      </form>
-
-      <h2>Pizza Preview: </h2>
+          <h2>Pizza Preview: </h2>
           <ul id="previewPizzas">
           </ul>
 
-      <div id="show-pizza">
-        <p>Size: <span class="size1"></span></p>
-        <p>Sauce: <span class="sauce1"></span></p>
-        <p>Cheese: <span class="cheese1"></span></p>
-        <p>Topping: <span class="topping1"></span></p>
-        <div id="buttons">
-        </div>
-      </div>
+          </div>
 
-    </div>
   </body>
 </html>
