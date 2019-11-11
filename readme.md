@@ -1,12 +1,12 @@
 # _{Beep! Boop!}_
 
-#### _{Applying week 3 knowledge to Wk3 Project}, {November 1st, 2019}_
+#### _{Applying week 4 knowledge to Wk4 Project}, {November 8th, 2019}_
 
 #### By _**{Mai Kue Lor}**_
 
 ## Description
 
-_{This webpage will respond to numbers as Beep!, Boop! or a sentence. The project uses knowledge that I learned in class from wk 3 which are Arrays and Loops.}_
+_{This webpage will respond to options to customize pizza for user. It will showcase the use of constructors and prototypes.}_
 
 | Behavior | Input | Output |
 | :-------------     | :------------- | :------------- |
@@ -23,6 +23,7 @@ _{This webpage will respond to numbers as Beep!, Boop! or a sentence. The projec
 * _Use bootstrap and other style options_
 * _Push to Git_
 *_Use Arrays and Loops_
+*_Use of constructors and prototypes_
 
 ## Technologies and Languages Used
 
